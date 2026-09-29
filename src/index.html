@@ -7,166 +7,97 @@
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
 <body>
-<header class="site-header">
-    <a class="site-logo" href="#">IT WEBSITE</a>
-    <nav class="main-navigation">
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-        </ul>
-    </nav>
-    <p class="header-contacts">+7 (111) 111-11-11 · mail@mail.com</p>
-</header>
+<div class="page">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-logo" href="#">THOUSAND</a>
 
-<main>
-    <section class="hero-section">
-        <article class="hero-content">
-            <h1>Development of mobile applications and web services of any complexity</h1>
-            <p>We create mobile applications and web services for business.</p>
-        </article>
-        <form class="callback-form">
-            <h2>Leave your contacts and we will call you back within 30 minutes</h2>
-            <label>Phone <input type="tel" name="phone" placeholder="+7 (111) 111-11-11"></label>
-            <label>Name <input type="text" name="name" placeholder="Ivan Ivanov"></label>
-            <button type="submit">Get consultation</button>
-        </form>
-        <img src="/src/assets/img/placeholder.svg" alt="Mobile application screens">
-    </section>
+            <nav class="main-navigation" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#projects">Cases</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
 
-    <hr>
+            <div class="header-contacts">
+                <a href="tel:+77072548147">📱 +7 (707) 254 81 47</a>
+                <a href="tel:+77783959026">+7 (778) 395 90 26</a>
+                <a href="mailto:thousanditcompany@gmail.com">✉ thousanditcompany@gmail.com</a>
+            </div>
+        </div>
+    </header>
 
-    <section class="services-section" id="services">
-        <article class="services-description">
-            <h2>Full development cycle</h2>
-            <p>We use proven technologies.</p>
-            <h3>Web</h3>
-            <p>PHP, JavaScript, NodeJS, WebSocket, HTML5, CSS.</p>
-            <h3>Mobile</h3>
-            <p>Swift, Kotlin, Flutter, React Native.</p>
-        </article>
-        <nav class="services-navigation">
-            <h3>Services</h3>
-            <ul>
-                <li>iOS development</li>
-                <li>Android development</li>
-                <li>Web development</li>
-                <li>UI/UX design</li>
-                <li>Testing</li>
-                <li>IT consulting</li>
-            </ul>
-        </nav>
-    </section>
+    <main class="page-content">
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>
+                        Development of <span>mobile applications</span>
+                        and <span>web services</span> of any complexity
+                    </h1>
+                    <p>
+                        We create mobile applications for iOS, Android that transfer your business
+                        to mobile applications of your customers' devices
+                    </p>
 
-    <hr>
+                    <form class="callback-form">
+                        <h2>Leave your contacts and we will call you back within 30 minutes</h2>
 
-    <section class="industries-section">
-        <h2>Developed more than 100 projects in 15 industries</h2>
-        <ul class="industries-list">
-            <li>Social media</li><li>Business automation</li><li>Education</li>
-            <li>Auto transport</li><li>Medicine</li><li>Restaurants</li>
-            <li>Marketplaces</li><li>AR technology</li><li>Startups</li>
-        </ul>
-    </section>
+                        <div class="callback-fields">
+                            <label>
+                                <span>Phone number</span>
+                                <input type="tel" name="phone" value="+7 (702) 517-11-98">
+                            </label>
 
-    <hr>
+                            <label>
+                                <span>Full name</span>
+                                <input type="text" name="name" value="Агадиль">
+                            </label>
 
-    <section class="projects-section" id="projects">
-        <h2>Projects we are proud of</h2>
-        <p>Our software development company is proud of its completed projects.</p>
-        <nav class="projects-navigation">
-            <ul><li>I-teka</li><li>Doctor</li><li>Game</li><li>Bank</li><li>Marketplace</li></ul>
-        </nav>
-        <article class="project-card">
-            <h3>I-teka</h3>
-            <p>The application is designed to search for drugs available in pharmacies.</p>
-            <ul><li>Business analysis</li><li>iOS / Android</li><li>UI/UX Design</li></ul>
-            <img src="/src/assets/img/placeholder.svg" alt="I-teka project preview">
-        </article>
-    </section>
+                            <button type="submit">Get consultation</button>
+                        </div>
+                    </form>
+                </div>
 
-    <hr>
+                <div class="hero-image" aria-hidden="true">
+                    <img src="/src/assets/img/placeholder.svg" alt="">
+                </div>
+            </div>
+        </section>
 
-    <section class="project-contact-section">
-        <article class="project-contact-text">
-            <h2>Let's discuss your project</h2>
-            <p>Leave your request for a free consultation.</p>
-        </article>
-        <form class="project-contact-form">
-            <label>Phone <input type="tel" name="project-phone"></label>
-            <label>Name <input type="text" name="project-name"></label>
-            <button type="submit">Discuss the project</button>
-        </form>
-    </section>
+        <section class="content-placeholder" id="services">
+            <div class="container">
+                <h2>Следующие блоки сайта</h2>
+                <p>Остальная часть страницы сохранена как место для следующих лабораторных работ.</p>
+            </div>
+        </section>
+    </main>
 
-    <hr>
+    <footer class="site-footer" id="contacts">
+        <div class="container footer-grid">
+            <div>
+                <h2>THOUSAND</h2>
+                <p>Development of mobile applications and web services.</p>
+            </div>
 
-    <section class="development-stages-section">
-        <h2>Application Development Stages</h2>
-        <article class="development-stage"><h3>Analysis</h3><p>We study the market and business requirements.</p></article>
-        <article class="development-stage"><h3>Design</h3><p>We create the application interface.</p></article>
-        <article class="development-stage"><h3>Development</h3><p>We create the application according to the specification.</p></article>
-        <article class="development-stage"><h3>Testing</h3><p>We check the application and fix errors.</p></article>
-        <article class="development-stage"><h3>Launching</h3><p>We publish the application.</p></article>
-        <article class="development-stage"><h3>Support</h3><p>We maintain and improve the product.</p></article>
-    </section>
+            <nav class="footer-navigation" aria-label="Навигация в подвале">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Cases</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
 
-    <hr>
-
-    <section class="team-section" id="team">
-        <article class="team-description">
-            <h2>Our team</h2>
-            <p>We are a team of web and mobile application developers.</p>
-            <ul><li>28 team members</li><li>100+ projects</li><li>7 years in IT</li></ul>
-        </article>
-        <img src="/src/assets/img/placeholder.svg" alt="Our development team">
-    </section>
-
-    <hr>
-
-    <aside class="book-offer">
-        <article class="book-offer-content">
-            <h2>Get the book for free by leaving your contacts</h2>
-            <form class="book-form">
-                <label>Phone <input type="tel" name="book-phone"></label>
-                <label>Name <input type="text" name="book-name"></label>
-                <label>Email <input type="email" name="email"></label>
-                <button type="submit">Send me book to email</button>
-            </form>
-        </article>
-        <img src="/src/assets/img/placeholder.svg" alt="Free development book">
-    </aside>
-
-    <hr>
-
-    <section class="faq-section">
-        <h2>FAQ</h2>
-        <article class="faq-item"><h3>What is the cost of a mobile application?</h3><p>The price depends on the complexity and scope of the project.</p></article>
-        <article class="faq-item"><h3>How long will development take?</h3><p>The development period depends on the project requirements.</p></article>
-        <article class="faq-item"><h3>Do you provide a guarantee?</h3><p>Yes, we support the product after launch.</p></article>
-        <article class="faq-item"><h3>Do you guarantee confidentiality?</h3><p>Project information remains confidential.</p></article>
-    </section>
-</main>
-
-<hr>
-
-<footer class="site-footer" id="contacts">
-    <h2>IT WEBSITE</h2>
-    <address class="footer-contacts">
-        <ul>
-            <li>Contact us: +7 (111) 111-11-11</li>
-            <li>Post: mail@mail.com</li>
-            <li>Address: City, city, street st., 90</li>
-        </ul>
-    </address>
-    <form class="footer-request-form">
-        <h3>Leave a request</h3>
-        <label>Name <input type="text" name="footer-name"></label>
-        <button type="submit">Send</button>
-    </form>
-    <p>We are registered and work officially.</p>
-</footer>
+            <address class="footer-contacts">
+                <a href="tel:+77072548147">+7 (707) 254 81 47</a>
+                <a href="mailto:thousanditcompany@gmail.com">thousanditcompany@gmail.com</a>
+            </address>
+        </div>
+    </footer>
+</div>
 
 <script src="index.js"></script>
 </body>
