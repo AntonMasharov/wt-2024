@@ -71,14 +71,34 @@ textarea.form-field {
 
 .breadcrumbs {
     display: flex;
-    gap: 8px;
-    align-items: center;
+    align-items: stretch;
+    max-width: 430px;
+    min-height: 40px;
     margin-top: 16px;
-    font-size: 14px;
-    color: #1F3F68;
+    border: 4px solid #FFFFFF;
+    background: linear-gradient(to bottom, #FFFFFF, #39858A);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    color: #000000;
 }
 
-.breadcrumbs a {
-    color: #5A98D0;
+.breadcrumbs > a,
+.breadcrumbs > span {
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    border-right: 2px solid #FFFFFF;
+    border-radius: 0 24px 24px 0;
+    box-shadow: 2px 0 2px rgba(0, 0, 0, 0.5);
+    color: inherit;
     text-decoration: none;
+}
+
+.breadcrumbs > a:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.breadcrumbs > a:focus-visible {
+    outline: 2px solid #1F3F68;
+    outline-offset: -4px;
 }
