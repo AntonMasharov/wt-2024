@@ -4,45 +4,194 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <title>Главная</title>
+    <title>Мобильные приложения — IT WEBSITE</title>
 </head>
 <body>
-<header>
-    <img src="assets/img/logo.png" alt="Логотип" width="100">
-    <nav>
+<header class="site-header">
+    <a class="site-logo" href="index.html"><img src="assets/img/logo.png" alt="IT WEBSITE — главная" width="100"></a>
+    <nav class="main-navigation" aria-label="Основная навигация">
         <ul>
-            <li><a href="index.html">Главная</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#team">Команда</a></li>
+            <li><a href="#faq">Вопросы</a></li>
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
-    <nav class="breadcrumbs" aria-label="Хлебные крошки">
-        <a href="index.html">Главная</a>
-    </nav>
+    <a class="header-phone" href="tel:+79991234567">+7 999 123-45-67</a>
+    <a class="header-contact" href="#discussion">Обсудить проект</a>
 </header>
-
-<main>
-    <h1 class="main-title">Мой первый сайт</h1>
-    <p class="paragraph">Добро пожаловать на мой первый сайт. Здесь находится основная информация о проекте.</p>
-
-    <h3 class="section-title">О нашем сайте</h3>
-    <h4 class="small-title">Немного полезной информации</h4>
-    <p class="paragraph">Этот сайт создан в рамках практической работы по веб-технологиям.</p>
-
-    <h3 class="section-title">Наши возможности</h3>
-    <p class="paragraph">Здесь можно найти информацию и наши контакты.</p>
+<hr>
+<main class="page-content">
+    <!-- Первый экран: описание и форма заявки. -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-description">
+            <h1 id="hero-title">Разработка мобильных приложений и веб-сервисов любой сложности</h1>
+            <p>Помогаем превратить идею в цифровой продукт: от обсуждения до запуска и поддержки.</p>
+        </div>
+        <div class="hero-request">
+            <h2>Оценим сроки и стоимость проекта</h2>
+            <p>Оставьте контакты, чтобы обсудить задачу.</p>
+            <form class="estimate-form" data-demo-form>
+                <p><label>Ваше имя <input type="text" name="name" autocomplete="name" required></label></p>
+                <p><label>Телефон <input type="tel" name="phone" autocomplete="tel" required></label></p>
+                <p>Учебная форма: данные не отправляются.</p>
+                <button type="submit">Получить консультацию</button>
+                <p class="form-status" role="status"></p>
+            </form>
+        </div>
+        <img class="hero-image" src="assets/img/mobile-app.svg" alt="Схематичный экран мобильного приложения" width="240" height="320">
+    </section>
     <hr>
+    <section class="development-cycle" id="services" aria-labelledby="cycle-title">
+        <div class="cycle-description">
+            <h2 id="cycle-title">Полный цикл разработки</h2>
+            <p>Берём на себя проектирование, разработку и сопровождение продукта.</p>
+            <h3>Веб-разработка</h3>
+            <p>Создаём сайты, личные кабинеты и сервисы для бизнеса.</p>
+            <h3>Мобильная разработка</h3>
+            <p>Разрабатываем приложения для iOS и Android.</p>
+        </div>
+        <div class="services-list">
+            <h3>Наши услуги</h3>
+            <ul>
+                <li>Аналитика</li><li>Проектирование</li><li>Дизайн</li>
+                <li>Разработка</li><li>Тестирование</li><li>Поддержка</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+    <section class="industries" aria-labelledby="industries-title">
+        <h2 id="industries-title">Разработали более 100 проектов в 15 отраслях</h2>
+        <p>Подбираем решения под задачи отрасли. Числа приведены как учебное наполнение по макету.</p>
+        <ul class="industries-list">
+            <li>Социальные сети</li><li>Спорт и фитнес</li><li>Банки</li>
+            <li>Строительство</li><li>Игры</li><li>Образование</li>
+            <li>Автомобили</li><li>Медицина</li><li>Рестораны</li>
+            <li>Маркетплейсы</li><li>Дополненная реальность</li><li>Онлайн-магазины</li>
+            <li>Логистика</li><li>Туризм</li><li>Недвижимость</li>
+        </ul>
+    </section>
+    <hr>
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Проекты, которыми мы гордимся</h2>
+        <p>Учебный пример приложения с каталогом товаров.</p>
+        <nav class="projects-navigation" aria-label="Проекты">
+            <ul><li><a href="#eteka-project">E-teka</a></li></ul>
+            <a href="#discussion">Предложить проект</a>
+        </nav>
+        <article class="project-card" id="eteka-project" aria-labelledby="eteka-title">
+            <div class="project-description">
+                <h3 id="eteka-title">E-teka</h3>
+                <p>Пример мобильного сервиса для поиска и заказа товаров в аптеке.</p>
+                <ul class="project-features">
+                    <li>Поиск по каталогу</li><li>Избранное</li><li>Оформление заказа</li>
+                </ul>
+                <dl class="project-details">
+                    <dt>Платформы</dt><dd>iOS и Android</dd>
+                    <dt>Отрасль</dt><dd>Медицина</dd>
+                </dl>
+            </div>
+            <img class="project-image" src="assets/img/mobile-app.svg" alt="Условный интерфейс приложения с карточками товаров" width="240" height="320">
+        </article>
+    </section>
+    <hr>
+    <section class="project-discussion" id="discussion" aria-labelledby="discussion-title">
+        <div class="discussion-description">
+            <h2 id="discussion-title">Обсудим ваш проект</h2>
+            <p>Расскажите, какую задачу должно решать приложение.</p>
+        </div>
+        <form class="discussion-form" data-demo-form>
+            <p><label>Ваше имя <input type="text" name="name" autocomplete="name" required></label></p>
+            <p><label>Электронная почта <input type="email" name="email" autocomplete="email" required></label></p>
+            <p><label>Описание проекта <textarea name="message" rows="4" required></textarea></label></p>
+            <p>Учебная форма: данные не отправляются.</p>
+            <button type="submit">Обсудить проект</button>
+            <p class="form-status" role="status"></p>
+        </form>
+    </section>
+    <hr>
+    <section class="development-stages" aria-labelledby="stages-title">
+        <h2 id="stages-title">Этапы разработки приложения</h2>
+        <p>Последовательно проходим этапы и согласовываем результат.</p>
+        <ol class="stages-list">
+            <li class="stage"><h3>Аналитика</h3><p>Изучаем задачи бизнеса и потребности пользователей.</p></li>
+            <li class="stage"><h3>Дизайн</h3><p>Продумываем структуру экранов и внешний вид.</p></li>
+            <li class="stage"><h3>Разработка</h3><p>Создаём интерфейс и программную логику.</p></li>
+            <li class="stage"><h3>Тестирование</h3><p>Проверяем работу и исправляем ошибки.</p></li>
+            <li class="stage"><h3>Запуск</h3><p>Готовим приложение к публикации.</p></li>
+            <li class="stage"><h3>Поддержка</h3><p>Следим за работой продукта и добавляем возможности.</p></li>
+        </ol>
+    </section>
+    <hr>
+    <section class="team" id="team" aria-labelledby="team-title">
+        <div class="team-description">
+            <h2 id="team-title">Наша команда</h2>
+            <p>Над продуктом работают специалисты с разными задачами.</p>
+            <ul class="team-statistics">
+                <li>28 специалистов</li><li>Более 100 проектов</li><li>7 лет опыта</li>
+            </ul>
+            <p>Показатели — учебное наполнение по макету.</p>
+            <ul class="team-roles">
+                <li>Аналитики изучают требования.</li><li>Дизайнеры проектируют интерфейс.</li>
+                <li>Разработчики пишут код.</li><li>Тестировщики проверяют результат.</li>
+            </ul>
+        </div>
+        <img class="team-image" src="assets/img/team.svg" alt="Схематичная иллюстрация трёх участников команды" width="320" height="180">
+    </section>
+    <hr>
+    <section class="contact-book" aria-labelledby="book-title">
+        <h2 id="book-title">Получите книгу за ваши контакты</h2>
+        <p>Десять вопросов перед началом разработки приложения.</p>
+        <form class="book-form" data-demo-form>
+            <p><label>Ваше имя <input type="text" name="name" autocomplete="name" required></label></p>
+            <p><label>Электронная почта <input type="email" name="email" autocomplete="email" required></label></p>
+            <p>В учебной версии памятка доступна сразу, без отправки контактов.</p>
+            <button type="submit">Проверить заполнение</button>
+            <p class="form-status" role="status"></p>
+        </form>
+        <a class="book-download" href="assets/materials/project-checklist.txt" download>Скачать памятку «10 вопросов»</a>
+        <img class="book-image" src="assets/img/book.svg" alt="Обложка памятки: 10 вопросов перед разработкой" width="160" height="220">
+    </section>
+    <hr>
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">Частые вопросы</h2>
+        <p>Ответы на основные вопросы перед началом работы.</p>
+        <div class="faq-list">
+            <details class="faq-item" open>
+                <summary>Что нужно для начала разработки?</summary>
+                <p>Опишите идею, пользователей и основные функции приложения.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Как рассчитывается стоимость?</summary>
+                <p>Стоимость зависит от функций, платформ и сложности интеграций.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Сколько времени занимает создание приложения?</summary>
+                <p>Сроки определяются после обсуждения требований и составления плана.</p>
+            </details>
+            <details class="faq-item">
+                <summary>Можно ли развивать приложение после запуска?</summary>
+                <p>Да, новые функции можно добавлять поэтапно.</p>
+            </details>
+        </div>
+    </section>
 </main>
-
-<footer>
-    <h3 class="section-title">Свяжитесь с нами</h3>
-    <p class="paragraph">Мы всегда готовы ответить на ваши вопросы.</p>
-    <hr>
-    <ul>
-        <li>Наш учебный проект</li>
-        <li>+7 999 123-45-67</li>
-        <li>example@mail.ru</li>
-    </ul>
-    <p class="paragraph">Все права защищены</p>
+<hr>
+<footer class="site-footer">
+    <h2>IT WEBSITE</h2>
+    <p>Разработка мобильных приложений и веб-сервисов.</p>
+    <address class="footer-contacts">
+        <ul>
+            <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
+            <li><a href="mailto:example@mail.ru">example@mail.ru</a></li>
+        </ul>
+    </address>
+    <nav class="footer-navigation" aria-label="Навигация в подвале">
+        <ul><li><a href="index.html">Главная</a></li><li><a href="contacts.html">Контакты</a></li></ul>
+    </nav>
+    <p class="copyright">Учебный проект. Лабораторная работа № 3.</p>
 </footer>
+<script src="index.js"></script>
 </body>
 </html>
