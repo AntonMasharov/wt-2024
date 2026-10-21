@@ -1,0 +1,96 @@
+/* Основа лабораторной № 4: закреплённая шапка и подвал страницы. */
+.landing-page {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #20232c;
+}
+
+.landing-page .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 20px max(24px, calc((100% - 1200px) / 2));
+    background: #fff;
+    box-shadow: 0 2px 12px #20232c0d;
+}
+
+.landing-page .site-logo img {
+    display: block;
+}
+
+.landing-page .main-navigation {
+    margin-right: auto;
+}
+
+.landing-page .main-navigation ul,
+.landing-page .footer-navigation ul,
+.landing-page .footer-contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.landing-page .site-header a,
+.landing-page .site-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.landing-page .site-header a:hover,
+.landing-page .site-footer a:hover {
+    text-decoration: underline;
+}
+
+.landing-page .header-contact {
+    padding: 14px 20px;
+    border-radius: 8px;
+    background: #0967db;
+    color: #fff;
+}
+
+.landing-page .page-content {
+    flex: 1;
+    width: min(1200px, calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.landing-page > hr {
+    display: none;
+}
+
+.landing-page .site-footer {
+    margin-top: auto;
+    padding: 40px max(24px, calc((100% - 1200px) / 2));
+    background: #20232c;
+    color: #fff;
+}
+
+.landing-page .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-block: 32px;
+}
+
+.landing-page .footer-contacts {
+    font-style: normal;
+}
+
+.landing-page .copyright {
+    margin-bottom: 0;
+    color: #c8ccd5;
+}
+
+.landing-page [id] {
+    scroll-margin-top: 140px;
+}

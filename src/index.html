@@ -6,45 +6,49 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Мобильные приложения — IT WEBSITE</title>
 </head>
-<body>
+<body class="landing-page">
 <header class="site-header">
-    <a class="site-logo" href="index.html"><img src="assets/img/logo.png" alt="IT WEBSITE — главная" width="100"></a>
-    <nav class="main-navigation" aria-label="Основная навигация">
-        <ul>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#projects">Проекты</a></li>
-            <li><a href="#team">Команда</a></li>
-            <li><a href="#faq">Вопросы</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-    </nav>
-    <a class="header-phone" href="tel:+79991234567">+7 999 123-45-67</a>
-    <a class="header-contact" href="#discussion">Обсудить проект</a>
+    <a class="site-logo" href="index.html">IT WEBSITE</a>
+    <nav class="main-navigation" aria-label="Основная навигация"><ul>
+        <li><a href="#services">Services</a></li><li><a href="#team">Media</a></li>
+        <li><a href="#projects">Cases</a></li><li><a href="#faq">FAQ</a></li><li><a href="contacts.html">Contacts</a></li>
+    </ul></nav>
+    <div class="header-contacts"><img src="assets/img/figma/64-1214-imgSmartphoneOutline24.svg" alt="">
+        <a href="tel:+71111111111">+7 (111) 111 11 11</a><a href="tel:+71111111111">+7 (111) 111 11 11</a>
+        <img src="assets/img/figma/64-1214-imgMailOutline24.svg" alt=""><a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
+    </div>
 </header>
 <hr>
+
 <main class="page-content">
     <!-- Первый экран: описание и форма заявки. -->
     <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-            <div class="hero-description">
-                <h1 id="hero-title">Разработка мобильных приложений и веб-сервисов любой сложности</h1>
-                <p>Помогаем превратить идею в цифровой продукт: от обсуждения до запуска и поддержки.</p>
-            </div>
-            <div class="hero-request">
-                <h2>Оценим сроки и стоимость проекта</h2>
-                <p>Оставьте контакты, чтобы обсудить задачу.</p>
-                <form class="estimate-form" data-demo-form>
-                    <p><label>Ваше имя <input type="text" name="name" autocomplete="name" required></label></p>
-                    <p><label>Телефон <input type="tel" name="phone" autocomplete="tel" required></label></p>
-                    <p>Учебная форма: данные не отправляются.</p>
-                    <button type="submit">Получить консультацию</button>
-                    <p class="form-status" role="status"></p>
-                </form>
-            </div>
+    <div class="hero-content">
+        <div class="hero-description">
+            <h1 id="hero-title">Development of <span>mobile applications</span> and <span>web services</span> of any complexity</h1>
+            <p>We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
         </div>
-        <img class="hero-image" src="assets/img/mobile-app.svg" alt="Схематичный экран мобильного приложения" width="240" height="320">
-    </section>
+        <div class="hero-request">
+            <h2>Leave your contacts and we will call you back<br>within 30 minutes</h2>
+            <form class="estimate-form" data-demo-form>
+                <label>Phone number<input type="tel" name="phone" autocomplete="tel" placeholder="+7 (111) 111-11-11" required><img class="input-line" src="assets/img/figma/64-654-imgVector214.svg" alt=""></label>
+                <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Иван Иванов" required><img class="input-line" src="assets/img/figma/64-654-imgVector214.svg" alt=""></label>
+                <button type="submit">Get<br>consultation</button>
+                <p class="form-status" role="status"></p>
+            </form>
+        </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+        <div class="phone phone-1"><img src="assets/img/figma/64-654-img1.png" alt=""></div>
+<div class="phone phone-2"><img src="assets/img/figma/64-654-img2.png" alt=""></div>
+<div class="phone phone-3"><img src="assets/img/figma/64-654-img.png" alt=""></div>
+<div class="phone phone-4"><img src="assets/img/figma/64-654-img3.png" alt=""></div>
+<div class="phone phone-5"><img src="assets/img/figma/64-654-img4.png" alt=""></div>
+<div class="phone phone-6"><img src="assets/img/figma/64-654-img5.png" alt=""></div>
+    </div>
+</section>
     <hr>
+
     <section class="development-cycle" id="services" aria-labelledby="cycle-title">
         <div class="cycle-description">
             <h2 id="cycle-title">Полный цикл разработки</h2>
@@ -178,23 +182,19 @@
             </details>
         </div>
     </section>
+
 </main>
+
 <hr>
 <footer class="site-footer">
     <h2>IT WEBSITE</h2>
-    <p>Разработка мобильных приложений и веб-сервисов.</p>
-    <div class="footer-content">
-        <address class="footer-contacts">
-            <ul class="footer-contact-list">
-                <li class="footer-contact-item"><a href="tel:+79991234567">+7 999 123-45-67</a></li>
-                <li class="footer-contact-item"><a href="mailto:example@mail.ru">example@mail.ru</a></li>
-            </ul>
-        </address>
-        <nav class="footer-navigation" aria-label="Навигация в подвале">
-            <ul><li><a href="index.html">Главная</a></li><li><a href="contacts.html">Контакты</a></li></ul>
-        </nav>
-    </div>
-    <p class="copyright">Учебный проект. Лабораторная работа № 3.</p>
+    <address class="footer-content">
+    <div><p><img src="assets/img/figma/64-1174-imgSmartphoneOutline24.svg" alt="">Contact nums</p><a href="tel:+77783959026">+7 (778) 395 90 26</a></div>
+<div><p><img src="assets/img/figma/64-1174-imgMailOutline24.svg" alt="">Post</p><a href="mailto:mail@mail.com">mail@mail.com</a></div>
+<div><p><img src="assets/img/figma/64-1174-imgPlaceOutline24.svg" alt="">Adress</p><span>City city, steet st. 90</span></div>
+<div><p><img src="assets/img/figma/64-1174-imgDocumentOutline24.svg" alt="">Leave a request</p><a href="#discussion">Leave a request</a></div>
+    </address>
+    <p class="footer-world"><img src="assets/img/figma/64-1174-imgVector.svg" alt="">We work throughout world</p>
 </footer>
 <script src="index.js"></script>
 </body>
