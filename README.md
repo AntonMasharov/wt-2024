@@ -15,7 +15,7 @@ Figma не предоставила подключению доступ к фа�
 | Блок на схеме | Класс | Элемент и вложенные блоки |
 | --- | --- | --- |
 | Шапка | site-header | header, логотип, nav.main-navigation, телефон и ссылка |
-| Первый экран | hero | section, hero-description, hero-request, форма и изображение |
+| Первый экран | hero | section, общий hero-content с hero-description и hero-request, изображение отдельно |
 | Полный цикл | development-cycle | section, cycle-description и services-list |
 | Отрасли | industries | section, список industries-list из 15 пунктов |
 | Проекты | projects | section, nav.projects-navigation, article.project-card |
@@ -25,7 +25,7 @@ Figma не предоставила подключению доступ к фа�
 | Команда | team | section, team-description со статистикой и ролями, изображение |
 | Книга | contact-book | section, form.book-form, скачивание памятки, обложка |
 | Вопросы | faq | section, div.faq-list, четыре details.faq-item |
-| Подвал | site-footer | footer, address.footer-contacts, nav.footer-navigation |
+| Подвал | site-footer | footer, общий footer-content с address.footer-contacts и nav.footer-navigation |
 
 Между шапкой, девятью основными секциями и подвалом стоят 10 элементов hr.
 
@@ -96,3 +96,20 @@ type="tel" обозначает телефон, но сам по себе не �
 показать ошибку. При корректном заполнении появляется сообщение без перезагрузки.
 Проверьте скачивание памятки. Точное сходство размеров и расположения с Figma
 не является критерием этой лабораторной работы.
+
+
+## Уточнение вложенных блоков по обводке
+
+- hero-content объединяет описание и заявку слева; hero-image находится снаружи
+  этой группы, но внутри общего hero.
+- service-item — отдельная услуга внутри services-list.
+- industry-item — отдельная отрасль внутри industries-list.
+- project-navigation-item — пункт навигации по проектам.
+- footer-content объединяет внутреннюю контактную и навигационную область подвала.
+  Заголовок организации и подпись copyright остаются вне этой группы.
+- footer-contact-list — список контактов, footer-contact-item — отдельный контакт.
+  address сохраняется внутри группы и обозначает только контактную информацию.
+
+Общие группы оформлены через div, поскольку самостоятельной темы с отдельным
+заголовком у них нет. Для повторяющихся пунктов используются существующие li
+с классами, без лишних div. Эти изменения уточняют структуру, а не оформление.

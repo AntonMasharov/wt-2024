@@ -25,20 +25,22 @@
 <main class="page-content">
     <!-- Первый экран: описание и форма заявки. -->
     <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-description">
-            <h1 id="hero-title">Разработка мобильных приложений и веб-сервисов любой сложности</h1>
-            <p>Помогаем превратить идею в цифровой продукт: от обсуждения до запуска и поддержки.</p>
-        </div>
-        <div class="hero-request">
-            <h2>Оценим сроки и стоимость проекта</h2>
-            <p>Оставьте контакты, чтобы обсудить задачу.</p>
-            <form class="estimate-form" data-demo-form>
-                <p><label>Ваше имя <input type="text" name="name" autocomplete="name" required></label></p>
-                <p><label>Телефон <input type="tel" name="phone" autocomplete="tel" required></label></p>
-                <p>Учебная форма: данные не отправляются.</p>
-                <button type="submit">Получить консультацию</button>
-                <p class="form-status" role="status"></p>
-            </form>
+        <div class="hero-content">
+            <div class="hero-description">
+                <h1 id="hero-title">Разработка мобильных приложений и веб-сервисов любой сложности</h1>
+                <p>Помогаем превратить идею в цифровой продукт: от обсуждения до запуска и поддержки.</p>
+            </div>
+            <div class="hero-request">
+                <h2>Оценим сроки и стоимость проекта</h2>
+                <p>Оставьте контакты, чтобы обсудить задачу.</p>
+                <form class="estimate-form" data-demo-form>
+                    <p><label>Ваше имя <input type="text" name="name" autocomplete="name" required></label></p>
+                    <p><label>Телефон <input type="tel" name="phone" autocomplete="tel" required></label></p>
+                    <p>Учебная форма: данные не отправляются.</p>
+                    <button type="submit">Получить консультацию</button>
+                    <p class="form-status" role="status"></p>
+                </form>
+            </div>
         </div>
         <img class="hero-image" src="assets/img/mobile-app.svg" alt="Схематичный экран мобильного приложения" width="240" height="320">
     </section>
@@ -55,8 +57,8 @@
         <div class="services-list">
             <h3>Наши услуги</h3>
             <ul>
-                <li>Аналитика</li><li>Проектирование</li><li>Дизайн</li>
-                <li>Разработка</li><li>Тестирование</li><li>Поддержка</li>
+                <li class="service-item">Аналитика</li><li class="service-item">Проектирование</li><li class="service-item">Дизайн</li>
+                <li class="service-item">Разработка</li><li class="service-item">Тестирование</li><li class="service-item">Поддержка</li>
             </ul>
         </div>
     </section>
@@ -65,11 +67,11 @@
         <h2 id="industries-title">Разработали более 100 проектов в 15 отраслях</h2>
         <p>Подбираем решения под задачи отрасли. Числа приведены как учебное наполнение по макету.</p>
         <ul class="industries-list">
-            <li>Социальные сети</li><li>Спорт и фитнес</li><li>Банки</li>
-            <li>Строительство</li><li>Игры</li><li>Образование</li>
-            <li>Автомобили</li><li>Медицина</li><li>Рестораны</li>
-            <li>Маркетплейсы</li><li>Дополненная реальность</li><li>Онлайн-магазины</li>
-            <li>Логистика</li><li>Туризм</li><li>Недвижимость</li>
+            <li class="industry-item">Социальные сети</li><li class="industry-item">Спорт и фитнес</li><li class="industry-item">Банки</li>
+            <li class="industry-item">Строительство</li><li class="industry-item">Игры</li><li class="industry-item">Образование</li>
+            <li class="industry-item">Автомобили</li><li class="industry-item">Медицина</li><li class="industry-item">Рестораны</li>
+            <li class="industry-item">Маркетплейсы</li><li class="industry-item">Дополненная реальность</li><li class="industry-item">Онлайн-магазины</li>
+            <li class="industry-item">Логистика</li><li class="industry-item">Туризм</li><li class="industry-item">Недвижимость</li>
         </ul>
     </section>
     <hr>
@@ -77,7 +79,7 @@
         <h2 id="projects-title">Проекты, которыми мы гордимся</h2>
         <p>Учебный пример приложения с каталогом товаров.</p>
         <nav class="projects-navigation" aria-label="Проекты">
-            <ul><li><a href="#eteka-project">E-teka</a></li></ul>
+            <ul><li class="project-navigation-item"><a href="#eteka-project">E-teka</a></li></ul>
             <a href="#discussion">Предложить проект</a>
         </nav>
         <article class="project-card" id="eteka-project" aria-labelledby="eteka-title">
@@ -181,15 +183,17 @@
 <footer class="site-footer">
     <h2>IT WEBSITE</h2>
     <p>Разработка мобильных приложений и веб-сервисов.</p>
-    <address class="footer-contacts">
-        <ul>
-            <li><a href="tel:+79991234567">+7 999 123-45-67</a></li>
-            <li><a href="mailto:example@mail.ru">example@mail.ru</a></li>
-        </ul>
-    </address>
-    <nav class="footer-navigation" aria-label="Навигация в подвале">
-        <ul><li><a href="index.html">Главная</a></li><li><a href="contacts.html">Контакты</a></li></ul>
-    </nav>
+    <div class="footer-content">
+        <address class="footer-contacts">
+            <ul class="footer-contact-list">
+                <li class="footer-contact-item"><a href="tel:+79991234567">+7 999 123-45-67</a></li>
+                <li class="footer-contact-item"><a href="mailto:example@mail.ru">example@mail.ru</a></li>
+            </ul>
+        </address>
+        <nav class="footer-navigation" aria-label="Навигация в подвале">
+            <ul><li><a href="index.html">Главная</a></li><li><a href="contacts.html">Контакты</a></li></ul>
+        </nav>
+    </div>
     <p class="copyright">Учебный проект. Лабораторная работа № 3.</p>
 </footer>
 <script src="index.js"></script>
