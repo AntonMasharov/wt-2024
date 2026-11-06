@@ -62,7 +62,7 @@
     display: none;
 }
 
-.landing-page .development-cycle {
+    .landing-page .development-cycle {
     display: grid;
     grid-template-columns: 600px 1fr;
     gap: 128px;
@@ -281,52 +281,9 @@
         height: 762px;
     }
 
-    .phone {
-        width: 197.011px;
-        height: 320.814px;
-    }
 
-    .phone img {
-        width: 137.93px;
-        height: 298.663px;
-    }
 
-    .phone-1 {
-        left: 550.17px;
-        top: -63px;
-    }
 
-    .phone-2 {
-        left: 615.98px;
-        top: 247.23px;
-    }
-
-    .phone-3 {
-        left: 397px;
-        top: -30.44px;
-    }
-
-    .phone-4 {
-        left: 681.96px;
-        top: 557.62px;
-    }
-
-    .phone-5 {
-        left: 528.91px;
-        top: 590.16px;
-    }
-
-    .phone-6 {
-        left: 461.54px;
-        top: 270.03px;
-        width: 209.324px;
-        height: 340.865px;
-    }
-
-    .phone-6 img {
-        width: 146.55px;
-        height: 317.33px;
-    }
 
     .landing-page .development-cycle {
         width: calc(100% - 80px);
@@ -482,16 +439,20 @@
 
     .hero {
         padding: 138px 24px 32px;
-        min-height: 1267px;
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero-content {
+        // Let copy, artwork and form share the mobile flex layout.
+        display: contents;
         width: 100%;
         max-width: none;
     }
 
     .hero-description {
-        min-height: 740px;
+        min-height: 0;
     }
 
     .hero h1 {
@@ -501,69 +462,17 @@
 
     .hero-description > p {
         max-width: 383px;
+        margin-bottom: 0;
     }
 
     .hero-request {
+        order: 2;
         width: 100%;
         padding: 32px;
     }
 
     .hero-request h2 {
         max-width: 295px;
-    }
-
-    .hero-art {
-        left: calc(50% - 212.5px);
-        top: 40px;
-        width: 425px;
-        height: 1267px;
-    }
-
-    .phone {
-        width: 191.295px;
-        height: 293.923px;
-    }
-
-    .phone img {
-        width: 137.93px;
-        height: 271.172px;
-    }
-
-    .phone-1 {
-        left: 193.17px;
-        top: 337px;
-    }
-
-    .phone-2 {
-        left: 252.91px;
-        top: 618.68px;
-    }
-
-    .phone-3 {
-        left: 40px;
-        top: 369.56px;
-    }
-
-    .phone-4 {
-        left: 312.82px;
-        top: 900.5px;
-    }
-
-    .phone-5 {
-        left: 159.77px;
-        top: 933.03px;
-    }
-
-    .phone-6 {
-        left: 98.62px;
-        top: 642.21px;
-        width: 203.251px;
-        height: 312.293px;
-    }
-
-    .phone-6 img {
-        width: 146.55px;
-        height: 288.12px;
     }
 
     .landing-page .development-cycle {

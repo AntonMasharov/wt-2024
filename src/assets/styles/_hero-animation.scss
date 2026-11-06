@@ -1,0 +1,82 @@
+@use "sass:math";
+
+$column-duration: 32s;
+$column-angle: -12deg;
+
+// Each animation moves by exactly one repeated image, so the loop has no jump.
+@mixin column-size($width, $source-width) {
+    width: $width;
+    --tile-height: #{math.div($width * 758, $source-width)};
+}
+
+.hero-art {
+    overflow: hidden;
+}
+
+.hero-column {
+    position: absolute;
+    top: -50%;
+    height: 200%;
+    background-repeat: repeat-y;
+    background-size: 100% var(--tile-height);
+    transform: rotate($column-angle);
+    animation: hero-column-scroll $column-duration linear infinite;
+
+    &--left {
+        @include column-size(480px, 188);
+        left: 660px;
+        background-image: url("../img/column-left.webp");
+    }
+
+    &--right {
+        @include column-size(292px, 113);
+        left: 1090px;
+        background-image: url("../img/column-right.webp");
+        animation-direction: reverse;
+    }
+}
+
+@keyframes hero-column-scroll {
+    from { background-position: 0 0; }
+    to { background-position: 0 calc(-1 * var(--tile-height)); }
+}
+
+@media (max-width: 1279px) {
+    .hero-column {
+        &--left {
+            @include column-size(225px, 188);
+            left: 402px;
+        }
+
+        &--right {
+            @include column-size(140px, 113);
+            left: 610px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-art {
+        // Follow the actual text height instead of a fixed page coordinate.
+        position: relative;
+        top: auto;
+        left: auto;
+        order: 1;
+        align-self: center;
+        flex: none;
+        width: 425px;
+        height: 480px;
+        margin: 24px 0 16px;
+    }
+
+    .hero-column {
+        &--left { left: 40px; }
+        &--right { left: 250px; }
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-column {
+        animation: none;
+    }
+}

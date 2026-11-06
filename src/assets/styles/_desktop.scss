@@ -160,61 +160,6 @@
     pointer-events: none;
 }
 
-.phone {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 417.4px;
-    height: 679.696px;
-}
-
-.phone img {
-    width: 292.226px;
-    height: 632.767px;
-    object-fit: cover;
-    border-radius: 24px;
-    transform: rotate(-12deg);
-}
-
-.phone-1 {
-    left: 952.52px;
-    top: -633.74px;
-}
-
-.phone-2 {
-    left: 1091.95px;
-    top: 23.53px;
-}
-
-.phone-3 {
-    left: 628px;
-    top: -564.76px;
-}
-
-.phone-4 {
-    left: 1231.73px;
-    top: 681.16px;
-}
-
-.phone-5 {
-    left: 907.48px;
-    top: 750.08px;
-}
-
-.phone-6 {
-    left: 764.73px;
-    top: 71.85px;
-    width: 443.487px;
-    height: 722.178px;
-}
-
-.phone-6 img {
-    width: 310.49px;
-    height: 672.315px;
-    box-shadow: 0 0 96px #0000003d, 0 0 2px #00000029;
-}
-
 .page-content > section:not(.hero), .page-content > hr {
     margin-inline: auto;
     width: min(1224px, calc(100% - 48px));

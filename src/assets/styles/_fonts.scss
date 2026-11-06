@@ -1,0 +1,11 @@
+// Generate the three existing Inter faces from one weight map.
+$inter-weights: ("Regular": 400, "Medium": 500, "Bold": 700);
+
+@each $name, $weight in $inter-weights {
+    @font-face {
+        font-family: "Inter";
+        src: local("Inter"), local("Inter-#{$name}"), local("Inter #{$name}"),
+             url("../../../static/fonts/Inter-#{$name}.woff2") format("woff2");
+        font-weight: $weight;
+    }
+}
