@@ -10,7 +10,8 @@ $column-angle: -12deg;
 }
 
 .hero-art {
-    overflow: hidden;
+    // Clip the desktop artwork at the hero edge, not at the fixed canvas edge.
+    overflow: visible;
 }
 
 .hero-column {
@@ -58,20 +59,35 @@ $column-angle: -12deg;
 @media (max-width: 767px) {
     .hero-art {
         // Follow the actual text height instead of a fixed page coordinate.
+        // Continue the columns behind the form; the hero clips the outer edges.
+        overflow: visible;
         position: relative;
         top: auto;
         left: auto;
         order: 1;
         align-self: center;
         flex: none;
-        width: 425px;
+        // Use the whole viewport so a wider phone layout has no inner crop edge.
+        width: 100vw;
         height: 480px;
         margin: 24px 0 16px;
     }
 
     .hero-column {
-        &--left { left: 40px; }
-        &--right { left: 250px; }
+        // Extend below the reserved artwork space without shifting the tilt.
+        height: calc(200% + 480px);
+        transform-origin: 50% 480px;
+        &--left { left: calc(50% - 172.5px); }
+        &--right { left: calc(50% + 37.5px); }
+    }
+
+    .hero-description, .hero-request {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero-description {
+        background: #f2f4f7;
     }
 }
 

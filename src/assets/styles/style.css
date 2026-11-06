@@ -878,7 +878,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   }
 }
 .hero-art {
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-column {
@@ -926,21 +926,33 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 }
 @media (max-width: 767px) {
   .hero-art {
+    overflow: visible;
     position: relative;
     top: auto;
     left: auto;
     order: 1;
     align-self: center;
     flex: none;
-    width: 425px;
+    width: 100vw;
     height: 480px;
     margin: 24px 0 16px;
   }
+  .hero-column {
+    height: calc(200% + 480px);
+    transform-origin: 50% 480px;
+  }
   .hero-column--left {
-    left: 40px;
+    left: calc(50% - 172.5px);
   }
   .hero-column--right {
-    left: 250px;
+    left: calc(50% + 37.5px);
+  }
+  .hero-description, .hero-request {
+    position: relative;
+    z-index: 2;
+  }
+  .hero-description {
+    background: #f2f4f7;
   }
 }
 @media (prefers-reduced-motion: reduce) {
