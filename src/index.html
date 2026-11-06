@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <title>Мобильные приложения — IT WEBSITE</title>
 </head>
-<body class="landing-page">
+<body class="landing-page" id="top">
 <header class="site-header">
-    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    <a class="menu-toggle" href="#mobile-menu" aria-label="Открыть меню" aria-controls="mobile-menu"><span></span><span></span><span></span></a>
     <a class="site-logo" href="index.html">IT WEBSITE</a>
     <nav class="main-navigation" aria-label="Основная навигация"><ul>
         <li><a href="#services">Services</a></li><li><a href="#team">Media</a></li>
@@ -19,8 +19,8 @@
         <img src="assets/img/figma/64-1214-imgMailOutline24.svg" alt=""><a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
     </div>
 </header>
-<dialog class="mobile-menu" id="mobile-menu" aria-label="Меню сайта">
-    <button class="menu-close" type="button" aria-label="Закрыть меню"><img src="assets/img/figma/menu-close.svg" alt=""></button>
+<section class="mobile-menu" id="mobile-menu" aria-label="Меню сайта" tabindex="-1">
+    <a class="menu-close" href="#top" aria-label="Закрыть меню"><img src="assets/img/figma/menu-close.svg" alt=""></a>
     <a class="menu-logo" href="index.html">IT WEBSITE</a>
     <nav aria-label="Мобильная навигация"><ul>
         <li><a href="#services">Services</a></li><li><a href="#team">Media</a></li>
@@ -31,7 +31,7 @@
         <a href="tel:+71111111111"><img src="assets/img/figma/64-1214-imgSmartphoneOutline24.svg" alt="">+7 (111) 111 11 11</a>
         <a href="mailto:itcompany@mail.com"><img src="assets/img/figma/64-1214-imgMailOutline24.svg" alt="">itcompany@mail.com</a>
     </div>
-</dialog>
+</section>
 <hr>
 
 <main class="page-content">
