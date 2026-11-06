@@ -1,0 +1,17 @@
+{
+  "name": "web-technologies-lab6",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass src/assets/styles/style.scss src/assets/styles/style.css --no-source-map --style=expanded",
+    "watch": "sass --watch src/assets/styles/style.scss:src/assets/styles/style.css --no-source-map --style=expanded",
+    "start": "npm run build && npm run serve",
+    "serve": "http-server . -c-1 -p 8080 -o /src/index.html",
+    "dev": "npm run build && concurrently -k \"npm:watch\" \"npm:serve\""
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6",
+    "http-server": "^14.1.1",
+    "sass": "1.100.0"
+  }
+}
