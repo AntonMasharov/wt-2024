@@ -1,0 +1,645 @@
+/* Lab 5: reference canvases 1440 / 768 / 425 px. */
+.menu-toggle {
+    display: none;
+}
+
+.mobile-menu {
+    border: 0;
+    padding: 0;
+}
+
+.mobile-menu:not([open]) {
+    display: none;
+}
+
+.landing-page .site-header {
+    gap: 48px;
+    font-family: Arial, sans-serif;
+}
+
+.landing-page .site-header .site-logo {
+    color: #2d66ee;
+    font-family: Inter, sans-serif;
+}
+
+.header-contacts {
+    gap: 8px;
+    font-size: 14px;
+}
+
+.header-contacts a:nth-of-type(2) {
+    margin-left: 8px;
+}
+
+.header-contacts img:nth-of-type(2) {
+    margin-left: 24px;
+}
+
+.hero-request h2 {
+    letter-spacing: .38px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-input > span {
+    font-size: 16px;
+}
+
+.phone-input input {
+    min-width: 0;
+}
+
+.estimate-form label {
+    gap: 8px;
+}
+
+.estimate-form .input-line {
+    height: 1px;
+}
+
+.landing-page .page-content > hr {
+    display: none;
+}
+
+.landing-page .development-cycle {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    gap: 128px;
+    padding-block: 80px;
+}
+
+.cycle-description h2 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.44;
+    letter-spacing: .3265px;
+}
+
+.cycle-description > p {
+    margin: 32px 0 34px;
+    font: 500 15px/20px Arial, sans-serif;
+}
+
+.technology-groups {
+    display: grid;
+    gap: 32px;
+    max-width: 496px;
+    font-family: Arial, sans-serif;
+}
+
+.technology-groups h3 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: .38px;
+}
+
+.technology-groups p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -.408px;
+    color: #344054;
+}
+
+.technology-groups span {
+    color: #2d66ee;
+}
+
+.services-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: fit-content;
+    padding-block: 12px;
+    color: #1d2939;
+    text-decoration: none;
+    font: 20px/24px Arial, sans-serif;
+    letter-spacing: .38px;
+}
+
+.service-item img {
+    flex: none;
+}
+
+.service-item a:hover, .service-item a:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: #2d66ee;
+    text-underline-offset: 8px;
+}
+
+.landing-page .footer-content {
+    margin-block: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content > div {
+    min-width: 0;
+}
+
+.footer-content a, .footer-content span {
+    overflow-wrap: anywhere;
+}
+
+.landing-page .site-footer {
+    box-shadow: 0 2px 24px #00000014;
+}
+
+.landing-page .page-content img:not(.input-line) {
+    max-width: 100%;
+}
+
+.footer-world {
+    font-family: Arial, sans-serif;
+    line-height: 16px;
+}
+
+/* Tablet: single-column form, artwork at the right, two-column cycle. */
+@media (max-width: 1279px) {
+    .landing-page .site-header {
+        top: 16px;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        padding: 25px 32px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 16px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 59px;
+        height: 40px;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 100%;
+        height: 8px;
+        background: #2d66ee;
+    }
+
+    .landing-page .main-navigation {
+        display: none;
+    }
+
+    .landing-page .site-header .site-logo {
+        grid-column: 2;
+    }
+
+    .header-contacts {
+        justify-self: end;
+        margin: 0;
+    }
+
+    .header-contacts img:first-child, .header-contacts a:nth-of-type(-n+2) {
+        display: none;
+    }
+
+    .header-contacts img:nth-of-type(2) {
+        margin: 0;
+    }
+
+    .hero {
+        min-height: 762px;
+        padding: 138px 32px 32px;
+    }
+
+    .hero-content {
+        width: 383px;
+        max-width: 56%;
+    }
+
+    .hero-description {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.44;
+    }
+
+    .hero-description > p {
+        margin: 24px 0 32px;
+    }
+
+    .hero-request {
+        width: 382px;
+        max-width: 100%;
+        padding: 32px;
+    }
+
+    .hero-request h2 {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
+
+    .hero-request h2 br {
+        display: none;
+    }
+
+    .estimate-form {
+        grid-template-columns: minmax(0, 224px);
+        gap: 32px;
+    }
+
+    .estimate-form input {
+        font-size: 14px;
+    }
+
+    .estimate-form label {
+        gap: 8px;
+    }
+
+    .estimate-form button {
+        width: max-content;
+        max-width: 100%;
+        min-height: 40px;
+        padding: 11px 24px;
+        white-space: nowrap;
+    }
+
+    .hero-art {
+        display: block;
+        opacity: 1;
+        left: calc(50% - 384px);
+        width: 768px;
+        height: 762px;
+    }
+
+    .phone {
+        width: 197.011px;
+        height: 320.814px;
+    }
+
+    .phone img {
+        width: 137.93px;
+        height: 298.663px;
+    }
+
+    .phone-1 {
+        left: 550.17px;
+        top: -63px;
+    }
+
+    .phone-2 {
+        left: 615.98px;
+        top: 247.23px;
+    }
+
+    .phone-3 {
+        left: 397px;
+        top: -30.44px;
+    }
+
+    .phone-4 {
+        left: 681.96px;
+        top: 557.62px;
+    }
+
+    .phone-5 {
+        left: 528.91px;
+        top: 590.16px;
+    }
+
+    .phone-6 {
+        left: 461.54px;
+        top: 270.03px;
+        width: 209.324px;
+        height: 340.865px;
+    }
+
+    .phone-6 img {
+        width: 146.55px;
+        height: 317.33px;
+    }
+
+    .landing-page .development-cycle {
+        width: calc(100% - 80px);
+        grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+        gap: 83px;
+        padding-block: 32px;
+    }
+
+    .cycle-description h2 {
+        font-size: 28px;
+        white-space: nowrap;
+    }
+
+    .technology-groups {
+        max-width: 277px;
+    }
+
+    .technology-groups p {
+        font-size: 14px;
+    }
+
+    .services-list {
+        padding-top: 124px;
+    }
+
+    .landing-page .site-footer {
+        width: calc(100% - 16px);
+        margin-bottom: 0;
+        padding: 40px 48px 32px;
+    }
+
+    .landing-page .footer-content {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+        margin-block: 32px;
+    }
+
+    .footer-content a, .footer-content span {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .footer-content p {
+        white-space: nowrap;
+    }
+
+    .mobile-menu[open] {
+        position: fixed;
+        inset: 0;
+        margin: 0;
+        width: 100%;
+        max-width: none;
+        height: min(848px, 100dvh);
+        max-height: 100dvh;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        color: #101828;
+        padding: 98px 24px 56px;
+        box-shadow: 0 4px 4px #00000040;
+    }
+
+    .mobile-menu::backdrop {
+        background: #10182866;
+    }
+
+    body:has(.mobile-menu[open]) {
+        overflow: hidden;
+    }
+
+    .menu-close {
+        position: absolute;
+        right: 16px;
+        top: 21px;
+        padding: 12px;
+        border: 0;
+        border-radius: 50%;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu-close img {
+        display: block;
+    }
+
+    .menu-logo {
+        font: 700 20px/24px Inter, sans-serif;
+        color: #2d66ee;
+        text-decoration: none;
+    }
+
+    .mobile-menu nav {
+        margin: 46px 0 60px;
+    }
+
+    .mobile-menu ul {
+        display: grid;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .mobile-menu nav a {
+        color: inherit;
+        text-decoration: none;
+        font: 24px/36px Inter, sans-serif;
+    }
+
+    .mobile-menu nav a:hover {
+        color: #2d66ee;
+    }
+
+    .menu-contacts {
+        display: grid;
+        gap: 16px;
+    }
+
+    .menu-contacts a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #2d66ee;
+        text-decoration: none;
+        font: 14px/18px Arial, sans-serif;
+    }
+
+}
+
+/* Phone: artwork between copy and form; stacked second screen. */
+@media (max-width: 767px) {
+    .landing-page .site-header {
+        top: 20px;
+        left: 8px;
+        width: calc(100% - 16px);
+        padding: 24px 17px;
+        grid-template-columns: 1fr auto 1fr;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 20px;
+    }
+
+    .menu-toggle span {
+        height: 4px;
+    }
+
+    .header-contacts {
+        display: none;
+    }
+
+    .hero {
+        padding: 138px 24px 32px;
+        min-height: 1267px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: none;
+    }
+
+    .hero-description {
+        min-height: 740px;
+    }
+
+    .hero h1 {
+        font-size: clamp(24px, 6.588vw, 28px);
+        letter-spacing: 0;
+    }
+
+    .hero-description > p {
+        max-width: 383px;
+    }
+
+    .hero-request {
+        width: 100%;
+        padding: 32px;
+    }
+
+    .hero-request h2 {
+        max-width: 295px;
+    }
+
+    .hero-art {
+        left: calc(50% - 212.5px);
+        top: 40px;
+        width: 425px;
+        height: 1267px;
+    }
+
+    .phone {
+        width: 191.295px;
+        height: 293.923px;
+    }
+
+    .phone img {
+        width: 137.93px;
+        height: 271.172px;
+    }
+
+    .phone-1 {
+        left: 193.17px;
+        top: 337px;
+    }
+
+    .phone-2 {
+        left: 252.91px;
+        top: 618.68px;
+    }
+
+    .phone-3 {
+        left: 40px;
+        top: 369.56px;
+    }
+
+    .phone-4 {
+        left: 312.82px;
+        top: 900.5px;
+    }
+
+    .phone-5 {
+        left: 159.77px;
+        top: 933.03px;
+    }
+
+    .phone-6 {
+        left: 98.62px;
+        top: 642.21px;
+        width: 203.251px;
+        height: 312.293px;
+    }
+
+    .phone-6 img {
+        width: 146.55px;
+        height: 288.12px;
+    }
+
+    .landing-page .development-cycle {
+        width: calc(100% - 34px);
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+        padding-block: 32px;
+    }
+
+    .cycle-description h2 {
+        white-space: normal;
+    }
+
+    .cycle-description > p {
+        margin-bottom: 32px;
+    }
+
+    .services-list {
+        padding-top: 0;
+    }
+
+    .landing-page .site-footer {
+        width: 100%;
+        padding: 32px 36px;
+    }
+
+    .site-footer h2 {
+        font-size: 32px;
+    }
+
+    .landing-page .footer-content {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 32px;
+        row-gap: 32px;
+        margin: 32px 0 48px;
+    }
+
+    .footer-content p {
+        font-size: 14px;
+        white-space: normal;
+    }
+
+    .footer-content p img {
+        flex: none;
+    }
+
+    .mobile-menu[open] {
+        height: min(642px, 100dvh);
+    }
+
+}
+
+@media (max-width: 374px) {
+    .hero {
+        padding-inline: 16px;
+    }
+
+    .hero h1, .cycle-description h2 {
+        font-size: 24px;
+    }
+
+    .hero-request {
+        padding: 24px;
+    }
+
+    .landing-page .site-footer {
+        padding-inline: 20px;
+    }
+
+    .landing-page .footer-content {
+        column-gap: 16px;
+    }
+
+}

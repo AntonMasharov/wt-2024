@@ -3,6 +3,7 @@
 @import "./utils.css";
 @import "./layout.css";
 @import "./desktop.css";
+@import "./responsive.css";
 
 .paragraph {
     font-size: 16px;

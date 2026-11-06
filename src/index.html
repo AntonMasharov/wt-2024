@@ -8,6 +8,7 @@
 </head>
 <body class="landing-page">
 <header class="site-header">
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     <a class="site-logo" href="index.html">IT WEBSITE</a>
     <nav class="main-navigation" aria-label="Основная навигация"><ul>
         <li><a href="#services">Services</a></li><li><a href="#team">Media</a></li>
@@ -18,6 +19,19 @@
         <img src="assets/img/figma/64-1214-imgMailOutline24.svg" alt=""><a href="mailto:itcompany@mail.com">itcompany@mail.com</a>
     </div>
 </header>
+<dialog class="mobile-menu" id="mobile-menu" aria-label="Меню сайта">
+    <button class="menu-close" type="button" aria-label="Закрыть меню"><img src="assets/img/figma/menu-close.svg" alt=""></button>
+    <a class="menu-logo" href="index.html">IT WEBSITE</a>
+    <nav aria-label="Мобильная навигация"><ul>
+        <li><a href="#services">Services</a></li><li><a href="#team">Media</a></li>
+        <li><a href="#projects">Cases</a></li><li><a href="#faq">FAQ</a></li><li><a href="contacts.html">Contacts</a></li>
+    </ul></nav>
+    <div class="menu-contacts">
+        <a href="tel:+71111111111"><img src="assets/img/figma/64-1214-imgSmartphoneOutline24.svg" alt="">+7 (111) 111 11 11</a>
+        <a href="tel:+71111111111"><img src="assets/img/figma/64-1214-imgSmartphoneOutline24.svg" alt="">+7 (111) 111 11 11</a>
+        <a href="mailto:itcompany@mail.com"><img src="assets/img/figma/64-1214-imgMailOutline24.svg" alt="">itcompany@mail.com</a>
+    </div>
+</dialog>
 <hr>
 
 <main class="page-content">
@@ -31,9 +45,9 @@
         <div class="hero-request">
             <h2>Leave your contacts and we will call you back<br>within 30 minutes</h2>
             <form class="estimate-form" data-demo-form>
-                <label>Phone number<input type="tel" name="phone" autocomplete="tel" placeholder="+7 (111) 111-11-11" required><img class="input-line" src="assets/img/figma/64-654-imgVector214.svg" alt=""></label>
+                <label>Phone number<span class="phone-input"><span aria-hidden="true">🇰🇿</span><input type="tel" name="phone" autocomplete="tel" placeholder="+7 (111) 111-11-11" required></span><img class="input-line" src="assets/img/figma/64-654-imgVector214.svg" alt=""></label>
                 <label>Full name<input type="text" name="name" autocomplete="name" placeholder="Иван Иванов" required><img class="input-line" src="assets/img/figma/64-654-imgVector214.svg" alt=""></label>
-                <button type="submit">Get<br>consultation</button>
+                <button type="submit">Get consultation</button>
                 <p class="form-status" role="status"></p>
             </form>
         </div>
@@ -51,18 +65,22 @@
 
     <section class="development-cycle" id="services" aria-labelledby="cycle-title">
         <div class="cycle-description">
-            <h2 id="cycle-title">Полный цикл разработки</h2>
-            <p>Берём на себя проектирование, разработку и сопровождение продукта.</p>
-            <h3>Веб-разработка</h3>
-            <p>Создаём сайты, личные кабинеты и сервисы для бизнеса.</p>
-            <h3>Мобильная разработка</h3>
-            <p>Разрабатываем приложения для iOS и Android.</p>
+            <h2 id="cycle-title">Full development cycle</h2>
+            <p>We use proven technologies</p>
+            <div class="technology-groups">
+                <div><h3>Web</h3><p>PHP <span>/</span> Javascript <span>/</span> Node.JS <span>/</span> Web Socket <span>/</span> Socket.io <span>/</span> Vue.js <span>/</span> Nuxt <span>/</span> MySQL <span>/</span> Laravel <span>/</span> GO lang <span>/</span> django <span>/</span> Python</p></div>
+                <div><h3>Mobile</h3><p>Swift <span>/</span> Kotlin <span>/</span> Alamofire <span>/</span> Firebase <span>/</span> CoreData <span>/</span> Room <span>/</span> Realm <span>/</span> Coroutine <span>/</span> RxJava <span>/</span> RxSwift <span>/</span> Unit Test <span>/</span> Navigation</p></div>
+            </div>
         </div>
         <div class="services-list">
-            <h3>Наши услуги</h3>
-            <ul>
-                <li class="service-item">Аналитика</li><li class="service-item">Проектирование</li><li class="service-item">Дизайн</li>
-                <li class="service-item">Разработка</li><li class="service-item">Тестирование</li><li class="service-item">Поддержка</li>
+            <ul aria-label="Услуги разработки">
+                <li class="service-item"><a href="#discussion">iOS development<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
+                <li class="service-item"><a href="#discussion">Android development<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
+                <li class="service-item"><a href="#discussion">Web development<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
+                <li class="service-item"><a href="#discussion">UI/UX design<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
+                <li class="service-item"><a href="#discussion">Testing<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
+                <li class="service-item"><a href="#discussion">Launch<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
+                <li class="service-item"><a href="#discussion">IT consulting<img src="assets/img/figma/service-chevron.svg" alt=""></a></li>
             </ul>
         </div>
     </section>
